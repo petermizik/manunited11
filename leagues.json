@@ -1,0 +1,74 @@
+[
+  {
+    "id": "ENG1",
+    "fotmobId": 47,
+    "name": "Premier League",
+    "country": "England",
+    "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+    "tierGroup": "Top 5 European Leagues"
+  },
+  {
+    "id": "ESP1",
+    "fotmobId": 87,
+    "name": "La Liga",
+    "country": "Spain",
+    "flag": "🇪🇸",
+    "tierGroup": "Top 5 European Leagues"
+  },
+  {
+    "id": "ITA1",
+    "fotmobId": 55,
+    "name": "Serie A",
+    "country": "Italy",
+    "flag": "🇮🇹",
+    "tierGroup": "Top 5 European Leagues"
+  },
+  {
+    "id": "GER1",
+    "fotmobId": 54,
+    "name": "Bundesliga",
+    "country": "Germany",
+    "flag": "🇩🇪",
+    "tierGroup": "Top 5 European Leagues"
+  },
+  {
+    "id": "FRA1",
+    "fotmobId": 53,
+    "name": "Ligue 1",
+    "country": "France",
+    "flag": "🇫🇷",
+    "tierGroup": "Top 5 European Leagues"
+  },
+  {
+    "id": "NED1",
+    "fotmobId": 57,
+    "name": "Eredivisie",
+    "country": "Netherlands",
+    "flag": "🇳🇱",
+    "tierGroup": "Additional Scouting Leagues"
+  },
+  {
+    "id": "POR1",
+    "fotmobId": 61,
+    "name": "Primeira Liga",
+    "country": "Portugal",
+    "flag": "🇵🇹",
+    "tierGroup": "Additional Scouting Leagues"
+  },
+  {
+    "id": "NOR1",
+    "fotmobId": 59,
+    "name": "Eliteserien",
+    "country": "Norway",
+    "flag": "🇳🇴",
+    "tierGroup": "Additional Scouting Leagues"
+  },
+  {
+    "id": "DEN1",
+    "fotmobId": 46,
+    "name": "Superliga",
+    "country": "Denmark",
+    "flag": "🇩🇰",
+    "tierGroup": "Additional Scouting Leagues"
+  }
+]

@@ -1,0 +1,1442 @@
+[
+  {
+    "id": "TM_10260",
+    "fotmobId": 10260,
+    "name": "Manchester United",
+    "shortName": "Man United",
+    "leagueId": "ENG1",
+    "isMUFC": true,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10260.png"
+  },
+  {
+    "id": "TM_8722",
+    "fotmobId": 8722,
+    "name": "1. FC Köln",
+    "shortName": "Köln",
+    "leagueId": "GER1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8722.png"
+  },
+  {
+    "id": "TM_9814",
+    "fotmobId": 9814,
+    "name": "AC Horsens",
+    "shortName": "AC Horsens",
+    "leagueId": "DEN1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9814.png"
+  },
+  {
+    "id": "TM_10217",
+    "fotmobId": 10217,
+    "name": "ADO Den Haag",
+    "shortName": "ADO Den Haag",
+    "leagueId": "NED1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10217.png"
+  },
+  {
+    "id": "TM_8678",
+    "fotmobId": 8678,
+    "name": "AFC Bournemouth",
+    "shortName": "Bournemouth",
+    "leagueId": "ENG1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8678.png"
+  },
+  {
+    "id": "TM_8071",
+    "fotmobId": 8071,
+    "name": "AGF",
+    "shortName": "AGF",
+    "leagueId": "DEN1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8071.png"
+  },
+  {
+    "id": "TM_10229",
+    "fotmobId": 10229,
+    "name": "AZ Alkmaar",
+    "shortName": "AZ Alkmaar",
+    "leagueId": "NED1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10229.png"
+  },
+  {
+    "id": "TM_8404",
+    "fotmobId": 8404,
+    "name": "Aalesund",
+    "shortName": "Aalesund",
+    "leagueId": "NOR1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8404.png"
+  },
+  {
+    "id": "TM_1786",
+    "fotmobId": 1786,
+    "name": "Académico Viseu",
+    "shortName": "Académico Viseu",
+    "leagueId": "POR1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/1786.png"
+  },
+  {
+    "id": "TM_8593",
+    "fotmobId": 8593,
+    "name": "Ajax",
+    "shortName": "Ajax",
+    "leagueId": "NED1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8593.png"
+  },
+  {
+    "id": "TM_9780",
+    "fotmobId": 9780,
+    "name": "Alverca",
+    "shortName": "Alverca",
+    "leagueId": "POR1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9780.png"
+  },
+  {
+    "id": "TM_8121",
+    "fotmobId": 8121,
+    "name": "Angers",
+    "shortName": "Angers",
+    "leagueId": "FRA1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8121.png"
+  },
+  {
+    "id": "TM_158085",
+    "fotmobId": 158085,
+    "name": "Arouca",
+    "shortName": "Arouca",
+    "leagueId": "POR1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/158085.png"
+  },
+  {
+    "id": "TM_9825",
+    "fotmobId": 9825,
+    "name": "Arsenal",
+    "shortName": "Arsenal",
+    "leagueId": "ENG1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9825.png"
+  },
+  {
+    "id": "TM_10252",
+    "fotmobId": 10252,
+    "name": "Aston Villa",
+    "shortName": "Aston Villa",
+    "leagueId": "ENG1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10252.png"
+  },
+  {
+    "id": "TM_8524",
+    "fotmobId": 8524,
+    "name": "Atalanta",
+    "shortName": "Atalanta",
+    "leagueId": "ITA1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8524.png"
+  },
+  {
+    "id": "TM_8315",
+    "fotmobId": 8315,
+    "name": "Athletic Club",
+    "shortName": "Athletic Club",
+    "leagueId": "ESP1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8315.png"
+  },
+  {
+    "id": "TM_9906",
+    "fotmobId": 9906,
+    "name": "Atlético Madrid",
+    "shortName": "Atlético Madrid",
+    "leagueId": "ESP1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9906.png"
+  },
+  {
+    "id": "TM_8406",
+    "fotmobId": 8406,
+    "name": "Augsburg",
+    "shortName": "Augsburg",
+    "leagueId": "GER1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8406.png"
+  },
+  {
+    "id": "TM_8583",
+    "fotmobId": 8583,
+    "name": "Auxerre",
+    "shortName": "Auxerre",
+    "leagueId": "FRA1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8583.png"
+  },
+  {
+    "id": "TM_8634",
+    "fotmobId": 8634,
+    "name": "Barcelona",
+    "shortName": "Barcelona",
+    "leagueId": "ESP1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8634.png"
+  },
+  {
+    "id": "TM_8178",
+    "fotmobId": 8178,
+    "name": "Bayer Leverkusen",
+    "shortName": "Leverkusen",
+    "leagueId": "GER1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8178.png"
+  },
+  {
+    "id": "TM_9823",
+    "fotmobId": 9823,
+    "name": "Bayern München",
+    "shortName": "Bayern München",
+    "leagueId": "GER1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9823.png"
+  },
+  {
+    "id": "TM_9772",
+    "fotmobId": 9772,
+    "name": "Benfica",
+    "shortName": "Benfica",
+    "leagueId": "POR1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9772.png"
+  },
+  {
+    "id": "TM_8402",
+    "fotmobId": 8402,
+    "name": "Bodø/Glimt",
+    "shortName": "Bodø/Glimt",
+    "leagueId": "NOR1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8402.png"
+  },
+  {
+    "id": "TM_9857",
+    "fotmobId": 9857,
+    "name": "Bologna",
+    "shortName": "Bologna",
+    "leagueId": "ITA1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9857.png"
+  },
+  {
+    "id": "TM_9789",
+    "fotmobId": 9789,
+    "name": "Borussia Dortmund",
+    "shortName": "Dortmund",
+    "leagueId": "GER1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9789.png"
+  },
+  {
+    "id": "TM_9788",
+    "fotmobId": 9788,
+    "name": "Borussia Mönchengladbach",
+    "shortName": "M'gladbach",
+    "leagueId": "GER1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9788.png"
+  },
+  {
+    "id": "TM_10264",
+    "fotmobId": 10264,
+    "name": "Braga",
+    "shortName": "Braga",
+    "leagueId": "POR1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10264.png"
+  },
+  {
+    "id": "TM_8468",
+    "fotmobId": 8468,
+    "name": "Brann",
+    "shortName": "Brann",
+    "leagueId": "NOR1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8468.png"
+  },
+  {
+    "id": "TM_9937",
+    "fotmobId": 9937,
+    "name": "Brentford",
+    "shortName": "Brentford",
+    "leagueId": "ENG1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9937.png"
+  },
+  {
+    "id": "TM_8521",
+    "fotmobId": 8521,
+    "name": "Brest",
+    "shortName": "Brest",
+    "leagueId": "FRA1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8521.png"
+  },
+  {
+    "id": "TM_10204",
+    "fotmobId": 10204,
+    "name": "Brighton & Hove Albion",
+    "shortName": "Brighton",
+    "leagueId": "ENG1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10204.png"
+  },
+  {
+    "id": "TM_8595",
+    "fotmobId": 8595,
+    "name": "Brøndby IF",
+    "shortName": "Brøndby IF",
+    "leagueId": "DEN1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8595.png"
+  },
+  {
+    "id": "TM_8529",
+    "fotmobId": 8529,
+    "name": "Cagliari",
+    "shortName": "Cagliari",
+    "leagueId": "ITA1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8529.png"
+  },
+  {
+    "id": "TM_7788",
+    "fotmobId": 7788,
+    "name": "Cambuur",
+    "shortName": "Cambuur",
+    "leagueId": "NED1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/7788.png"
+  },
+  {
+    "id": "TM_212821",
+    "fotmobId": 212821,
+    "name": "Casa Pia AC",
+    "shortName": "Casa Pia AC",
+    "leagueId": "POR1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/212821.png"
+  },
+  {
+    "id": "TM_9910",
+    "fotmobId": 9910,
+    "name": "Celta Vigo",
+    "shortName": "Celta Vigo",
+    "leagueId": "ESP1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9910.png"
+  },
+  {
+    "id": "TM_8455",
+    "fotmobId": 8455,
+    "name": "Chelsea",
+    "shortName": "Chelsea",
+    "leagueId": "ENG1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8455.png"
+  },
+  {
+    "id": "TM_10171",
+    "fotmobId": 10171,
+    "name": "Como",
+    "shortName": "Como",
+    "leagueId": "ITA1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10171.png"
+  },
+  {
+    "id": "TM_8669",
+    "fotmobId": 8669,
+    "name": "Coventry City",
+    "shortName": "Coventry",
+    "leagueId": "ENG1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8669.png"
+  },
+  {
+    "id": "TM_9826",
+    "fotmobId": 9826,
+    "name": "Crystal Palace",
+    "shortName": "Crystal Palace",
+    "leagueId": "ENG1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9826.png"
+  },
+  {
+    "id": "TM_9783",
+    "fotmobId": 9783,
+    "name": "Deportivo A Coruña",
+    "shortName": "Deportivo A Coruña",
+    "leagueId": "ESP1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9783.png"
+  },
+  {
+    "id": "TM_9866",
+    "fotmobId": 9866,
+    "name": "Deportivo Alavés",
+    "shortName": "Deportivo Alavés",
+    "leagueId": "ESP1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9866.png"
+  },
+  {
+    "id": "TM_9810",
+    "fotmobId": 9810,
+    "name": "Eintracht Frankfurt",
+    "shortName": "Frankfurt",
+    "leagueId": "GER1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9810.png"
+  },
+  {
+    "id": "TM_10268",
+    "fotmobId": 10268,
+    "name": "Elche",
+    "shortName": "Elche",
+    "leagueId": "ESP1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10268.png"
+  },
+  {
+    "id": "TM_8232",
+    "fotmobId": 8232,
+    "name": "Elversberg",
+    "shortName": "Elversberg",
+    "leagueId": "GER1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8232.png"
+  },
+  {
+    "id": "TM_8558",
+    "fotmobId": 8558,
+    "name": "Espanyol",
+    "shortName": "Espanyol",
+    "leagueId": "ESP1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8558.png"
+  },
+  {
+    "id": "TM_7842",
+    "fotmobId": 7842,
+    "name": "Estoril",
+    "shortName": "Estoril",
+    "leagueId": "POR1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/7842.png"
+  },
+  {
+    "id": "TM_1074320",
+    "fotmobId": 1074320,
+    "name": "Estrela da Amadora",
+    "shortName": "Estrela da Amadora",
+    "leagueId": "POR1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/1074320.png"
+  },
+  {
+    "id": "TM_8668",
+    "fotmobId": 8668,
+    "name": "Everton",
+    "shortName": "Everton",
+    "leagueId": "ENG1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8668.png"
+  },
+  {
+    "id": "TM_10218",
+    "fotmobId": 10218,
+    "name": "Excelsior",
+    "shortName": "Excelsior",
+    "leagueId": "NED1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10218.png"
+  },
+  {
+    "id": "TM_8674",
+    "fotmobId": 8674,
+    "name": "FC Groningen",
+    "shortName": "FC Groningen",
+    "leagueId": "NED1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8674.png"
+  },
+  {
+    "id": "TM_8391",
+    "fotmobId": 8391,
+    "name": "FC København",
+    "shortName": "FC København",
+    "leagueId": "DEN1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8391.png"
+  },
+  {
+    "id": "TM_8113",
+    "fotmobId": 8113,
+    "name": "FC Midtjylland",
+    "shortName": "FC Midtjylland",
+    "leagueId": "DEN1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8113.png"
+  },
+  {
+    "id": "TM_9773",
+    "fotmobId": 9773,
+    "name": "FC Porto",
+    "shortName": "FC Porto",
+    "leagueId": "POR1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9773.png"
+  },
+  {
+    "id": "TM_8611",
+    "fotmobId": 8611,
+    "name": "FC Twente",
+    "shortName": "FC Twente",
+    "leagueId": "NED1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8611.png"
+  },
+  {
+    "id": "TM_9908",
+    "fotmobId": 9908,
+    "name": "FC Utrecht",
+    "shortName": "FC Utrecht",
+    "leagueId": "NED1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9908.png"
+  },
+  {
+    "id": "TM_1634",
+    "fotmobId": 1634,
+    "name": "Famalicão",
+    "shortName": "Famalicão",
+    "leagueId": "POR1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/1634.png"
+  },
+  {
+    "id": "TM_10235",
+    "fotmobId": 10235,
+    "name": "Feyenoord",
+    "shortName": "Feyenoord",
+    "leagueId": "NED1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10235.png"
+  },
+  {
+    "id": "TM_8535",
+    "fotmobId": 8535,
+    "name": "Fiorentina",
+    "shortName": "Fiorentina",
+    "leagueId": "ITA1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8535.png"
+  },
+  {
+    "id": "TM_6422",
+    "fotmobId": 6422,
+    "name": "Fortuna Sittard",
+    "shortName": "Fortuna Sittard",
+    "leagueId": "NED1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/6422.png"
+  },
+  {
+    "id": "TM_8417",
+    "fotmobId": 8417,
+    "name": "Fredrikstad",
+    "shortName": "Fredrikstad",
+    "leagueId": "NOR1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8417.png"
+  },
+  {
+    "id": "TM_8358",
+    "fotmobId": 8358,
+    "name": "Freiburg",
+    "shortName": "Freiburg",
+    "leagueId": "GER1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8358.png"
+  },
+  {
+    "id": "TM_9891",
+    "fotmobId": 9891,
+    "name": "Frosinone",
+    "shortName": "Frosinone",
+    "leagueId": "ITA1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9891.png"
+  },
+  {
+    "id": "TM_9879",
+    "fotmobId": 9879,
+    "name": "Fulham",
+    "shortName": "Fulham",
+    "leagueId": "ENG1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9879.png"
+  },
+  {
+    "id": "TM_10233",
+    "fotmobId": 10233,
+    "name": "Genoa",
+    "shortName": "Genoa",
+    "leagueId": "ITA1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10233.png"
+  },
+  {
+    "id": "TM_8305",
+    "fotmobId": 8305,
+    "name": "Getafe",
+    "shortName": "Getafe",
+    "leagueId": "ESP1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8305.png"
+  },
+  {
+    "id": "TM_9764",
+    "fotmobId": 9764,
+    "name": "Gil Vicente",
+    "shortName": "Gil Vicente",
+    "leagueId": "POR1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9764.png"
+  },
+  {
+    "id": "TM_6433",
+    "fotmobId": 6433,
+    "name": "Go Ahead Eagles",
+    "shortName": "Go Ahead Eagles",
+    "leagueId": "NED1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/6433.png"
+  },
+  {
+    "id": "TM_8448",
+    "fotmobId": 8448,
+    "name": "Hamarkameratene",
+    "shortName": "HamKam",
+    "leagueId": "NOR1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8448.png"
+  },
+  {
+    "id": "TM_9790",
+    "fotmobId": 9790,
+    "name": "Hamburger SV",
+    "shortName": "Hamburger SV",
+    "leagueId": "GER1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9790.png"
+  },
+  {
+    "id": "TM_8226",
+    "fotmobId": 8226,
+    "name": "Hoffenheim",
+    "shortName": "Hoffenheim",
+    "leagueId": "GER1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8226.png"
+  },
+  {
+    "id": "TM_8667",
+    "fotmobId": 8667,
+    "name": "Hull City",
+    "shortName": "Hull",
+    "leagueId": "ENG1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8667.png"
+  },
+  {
+    "id": "TM_8636",
+    "fotmobId": 8636,
+    "name": "Inter",
+    "shortName": "Inter",
+    "leagueId": "ITA1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8636.png"
+  },
+  {
+    "id": "TM_9902",
+    "fotmobId": 9902,
+    "name": "Ipswich Town",
+    "shortName": "Ipswich",
+    "leagueId": "ENG1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9902.png"
+  },
+  {
+    "id": "TM_9885",
+    "fotmobId": 9885,
+    "name": "Juventus",
+    "shortName": "Juventus",
+    "leagueId": "ITA1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9885.png"
+  },
+  {
+    "id": "TM_2305",
+    "fotmobId": 2305,
+    "name": "KFUM",
+    "shortName": "KFUM",
+    "leagueId": "NOR1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/2305.png"
+  },
+  {
+    "id": "TM_8605",
+    "fotmobId": 8605,
+    "name": "Kristiansund",
+    "shortName": "Kristiansund",
+    "leagueId": "NOR1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8605.png"
+  },
+  {
+    "id": "TM_8543",
+    "fotmobId": 8543,
+    "name": "Lazio",
+    "shortName": "Lazio",
+    "leagueId": "ITA1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8543.png"
+  },
+  {
+    "id": "TM_9746",
+    "fotmobId": 9746,
+    "name": "Le Havre",
+    "shortName": "Le Havre",
+    "leagueId": "FRA1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9746.png"
+  },
+  {
+    "id": "TM_8682",
+    "fotmobId": 8682,
+    "name": "Le Mans",
+    "shortName": "Le Mans",
+    "leagueId": "FRA1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8682.png"
+  },
+  {
+    "id": "TM_9888",
+    "fotmobId": 9888,
+    "name": "Lecce",
+    "shortName": "Lecce",
+    "leagueId": "ITA1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9888.png"
+  },
+  {
+    "id": "TM_8463",
+    "fotmobId": 8463,
+    "name": "Leeds United",
+    "shortName": "Leeds",
+    "leagueId": "ENG1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8463.png"
+  },
+  {
+    "id": "TM_8588",
+    "fotmobId": 8588,
+    "name": "Lens",
+    "shortName": "Lens",
+    "leagueId": "FRA1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8588.png"
+  },
+  {
+    "id": "TM_8581",
+    "fotmobId": 8581,
+    "name": "Levante",
+    "shortName": "Levante",
+    "leagueId": "ESP1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8581.png"
+  },
+  {
+    "id": "TM_8639",
+    "fotmobId": 8639,
+    "name": "Lille",
+    "shortName": "Lille",
+    "leagueId": "FRA1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8639.png"
+  },
+  {
+    "id": "TM_8476",
+    "fotmobId": 8476,
+    "name": "Lillestrøm",
+    "shortName": "Lillestrøm",
+    "leagueId": "NOR1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8476.png"
+  },
+  {
+    "id": "TM_8650",
+    "fotmobId": 8650,
+    "name": "Liverpool",
+    "shortName": "Liverpool",
+    "leagueId": "ENG1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8650.png"
+  },
+  {
+    "id": "TM_8689",
+    "fotmobId": 8689,
+    "name": "Lorient",
+    "shortName": "Lorient",
+    "leagueId": "FRA1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8689.png"
+  },
+  {
+    "id": "TM_9907",
+    "fotmobId": 9907,
+    "name": "Lyngby",
+    "shortName": "Lyngby",
+    "leagueId": "DEN1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9907.png"
+  },
+  {
+    "id": "TM_9748",
+    "fotmobId": 9748,
+    "name": "Lyon",
+    "shortName": "Lyon",
+    "leagueId": "FRA1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9748.png"
+  },
+  {
+    "id": "TM_9905",
+    "fotmobId": 9905,
+    "name": "Mainz 05",
+    "shortName": "Mainz",
+    "leagueId": "GER1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9905.png"
+  },
+  {
+    "id": "TM_8456",
+    "fotmobId": 8456,
+    "name": "Manchester City",
+    "shortName": "Man City",
+    "leagueId": "ENG1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8456.png"
+  },
+  {
+    "id": "TM_8592",
+    "fotmobId": 8592,
+    "name": "Marseille",
+    "shortName": "Marseille",
+    "leagueId": "FRA1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8592.png"
+  },
+  {
+    "id": "TM_10212",
+    "fotmobId": 10212,
+    "name": "Marítimo",
+    "shortName": "Marítimo",
+    "leagueId": "POR1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10212.png"
+  },
+  {
+    "id": "TM_8564",
+    "fotmobId": 8564,
+    "name": "Milan",
+    "shortName": "Milan",
+    "leagueId": "ITA1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8564.png"
+  },
+  {
+    "id": "TM_9917",
+    "fotmobId": 9917,
+    "name": "Molde",
+    "shortName": "Molde",
+    "leagueId": "NOR1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9917.png"
+  },
+  {
+    "id": "TM_9829",
+    "fotmobId": 9829,
+    "name": "Monaco",
+    "shortName": "Monaco",
+    "leagueId": "FRA1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9829.png"
+  },
+  {
+    "id": "TM_6504",
+    "fotmobId": 6504,
+    "name": "Monza",
+    "shortName": "Monza",
+    "leagueId": "ITA1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/6504.png"
+  },
+  {
+    "id": "TM_8348",
+    "fotmobId": 8348,
+    "name": "Moreirense",
+    "shortName": "Moreirense",
+    "leagueId": "POR1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8348.png"
+  },
+  {
+    "id": "TM_9864",
+    "fotmobId": 9864,
+    "name": "Málaga",
+    "shortName": "Málaga",
+    "leagueId": "ESP1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9864.png"
+  },
+  {
+    "id": "TM_8464",
+    "fotmobId": 8464,
+    "name": "NEC Nijmegen",
+    "shortName": "NEC Nijmegen",
+    "leagueId": "NED1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8464.png"
+  },
+  {
+    "id": "TM_10214",
+    "fotmobId": 10214,
+    "name": "Nacional",
+    "shortName": "Nacional",
+    "leagueId": "POR1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10214.png"
+  },
+  {
+    "id": "TM_9875",
+    "fotmobId": 9875,
+    "name": "Napoli",
+    "shortName": "Napoli",
+    "leagueId": "ITA1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9875.png"
+  },
+  {
+    "id": "TM_10261",
+    "fotmobId": 10261,
+    "name": "Newcastle United",
+    "shortName": "Newcastle",
+    "leagueId": "ENG1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10261.png"
+  },
+  {
+    "id": "TM_9831",
+    "fotmobId": 9831,
+    "name": "Nice",
+    "shortName": "Nice",
+    "leagueId": "FRA1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9831.png"
+  },
+  {
+    "id": "TM_10202",
+    "fotmobId": 10202,
+    "name": "Nordsjælland",
+    "shortName": "Nordsjælland",
+    "leagueId": "DEN1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10202.png"
+  },
+  {
+    "id": "TM_10203",
+    "fotmobId": 10203,
+    "name": "Nottingham Forest",
+    "shortName": "Nottm Forest",
+    "leagueId": "ENG1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10203.png"
+  },
+  {
+    "id": "TM_8414",
+    "fotmobId": 8414,
+    "name": "OB",
+    "shortName": "OB",
+    "leagueId": "DEN1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8414.png"
+  },
+  {
+    "id": "TM_8371",
+    "fotmobId": 8371,
+    "name": "Osasuna",
+    "shortName": "Osasuna",
+    "leagueId": "ESP1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8371.png"
+  },
+  {
+    "id": "TM_6413",
+    "fotmobId": 6413,
+    "name": "PEC Zwolle",
+    "shortName": "PEC Zwolle",
+    "leagueId": "NED1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/6413.png"
+  },
+  {
+    "id": "TM_8640",
+    "fotmobId": 8640,
+    "name": "PSV Eindhoven",
+    "shortName": "PSV Eindhoven",
+    "leagueId": "NED1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8640.png"
+  },
+  {
+    "id": "TM_8460",
+    "fotmobId": 8460,
+    "name": "Paderborn",
+    "shortName": "Paderborn",
+    "leagueId": "GER1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8460.png"
+  },
+  {
+    "id": "TM_6379",
+    "fotmobId": 6379,
+    "name": "Paris FC",
+    "shortName": "Paris FC",
+    "leagueId": "FRA1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/6379.png"
+  },
+  {
+    "id": "TM_9847",
+    "fotmobId": 9847,
+    "name": "Paris Saint-Germain",
+    "shortName": "PSG",
+    "leagueId": "FRA1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9847.png"
+  },
+  {
+    "id": "TM_10167",
+    "fotmobId": 10167,
+    "name": "Parma",
+    "shortName": "Parma",
+    "leagueId": "ITA1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10167.png"
+  },
+  {
+    "id": "TM_178475",
+    "fotmobId": 178475,
+    "name": "RB Leipzig",
+    "shortName": "RB Leipzig",
+    "leagueId": "GER1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/178475.png"
+  },
+  {
+    "id": "TM_8696",
+    "fotmobId": 8696,
+    "name": "Racing Santander",
+    "shortName": "Racing Santander",
+    "leagueId": "ESP1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8696.png"
+  },
+  {
+    "id": "TM_8410",
+    "fotmobId": 8410,
+    "name": "Randers FC",
+    "shortName": "Randers FC",
+    "leagueId": "DEN1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8410.png"
+  },
+  {
+    "id": "TM_8370",
+    "fotmobId": 8370,
+    "name": "Rayo Vallecano",
+    "shortName": "Rayo Vallecano",
+    "leagueId": "ESP1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8370.png"
+  },
+  {
+    "id": "TM_8603",
+    "fotmobId": 8603,
+    "name": "Real Betis",
+    "shortName": "Real Betis",
+    "leagueId": "ESP1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8603.png"
+  },
+  {
+    "id": "TM_8633",
+    "fotmobId": 8633,
+    "name": "Real Madrid",
+    "shortName": "Real Madrid",
+    "leagueId": "ESP1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8633.png"
+  },
+  {
+    "id": "TM_8560",
+    "fotmobId": 8560,
+    "name": "Real Sociedad",
+    "shortName": "Real Sociedad",
+    "leagueId": "ESP1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8560.png"
+  },
+  {
+    "id": "TM_9851",
+    "fotmobId": 9851,
+    "name": "Rennes",
+    "shortName": "Rennes",
+    "leagueId": "FRA1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9851.png"
+  },
+  {
+    "id": "TM_7841",
+    "fotmobId": 7841,
+    "name": "Rio Ave",
+    "shortName": "Rio Ave",
+    "leagueId": "POR1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/7841.png"
+  },
+  {
+    "id": "TM_8686",
+    "fotmobId": 8686,
+    "name": "Roma",
+    "shortName": "Roma",
+    "leagueId": "ITA1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8686.png"
+  },
+  {
+    "id": "TM_8422",
+    "fotmobId": 8422,
+    "name": "Rosenborg",
+    "shortName": "Rosenborg",
+    "leagueId": "NOR1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8422.png"
+  },
+  {
+    "id": "TM_10228",
+    "fotmobId": 10228,
+    "name": "SC Heerenveen",
+    "shortName": "SC Heerenveen",
+    "leagueId": "NED1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10228.png"
+  },
+  {
+    "id": "TM_8609",
+    "fotmobId": 8609,
+    "name": "Sandefjord",
+    "shortName": "Sandefjord",
+    "leagueId": "NOR1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8609.png"
+  },
+  {
+    "id": "TM_1567",
+    "fotmobId": 1567,
+    "name": "Santa Clara",
+    "shortName": "Santa Clara",
+    "leagueId": "POR1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/1567.png"
+  },
+  {
+    "id": "TM_8509",
+    "fotmobId": 8509,
+    "name": "Sarpsborg 08",
+    "shortName": "Sarpsborg 08",
+    "leagueId": "NOR1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8509.png"
+  },
+  {
+    "id": "TM_7943",
+    "fotmobId": 7943,
+    "name": "Sassuolo",
+    "shortName": "Sassuolo",
+    "leagueId": "ITA1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/7943.png"
+  },
+  {
+    "id": "TM_10189",
+    "fotmobId": 10189,
+    "name": "Schalke 04",
+    "shortName": "Schalke 04",
+    "leagueId": "GER1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10189.png"
+  },
+  {
+    "id": "TM_8302",
+    "fotmobId": 8302,
+    "name": "Sevilla",
+    "shortName": "Sevilla",
+    "leagueId": "ESP1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8302.png"
+  },
+  {
+    "id": "TM_8415",
+    "fotmobId": 8415,
+    "name": "Silkeborg",
+    "shortName": "Silkeborg",
+    "leagueId": "DEN1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8415.png"
+  },
+  {
+    "id": "TM_8614",
+    "fotmobId": 8614,
+    "name": "Sparta Rotterdam",
+    "shortName": "Sparta Rotterdam",
+    "leagueId": "NED1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8614.png"
+  },
+  {
+    "id": "TM_9768",
+    "fotmobId": 9768,
+    "name": "Sporting CP",
+    "shortName": "Sporting CP",
+    "leagueId": "POR1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9768.png"
+  },
+  {
+    "id": "TM_9919",
+    "fotmobId": 9919,
+    "name": "Start",
+    "shortName": "Start",
+    "leagueId": "NOR1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9919.png"
+  },
+  {
+    "id": "TM_9848",
+    "fotmobId": 9848,
+    "name": "Strasbourg",
+    "shortName": "Strasbourg",
+    "leagueId": "FRA1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9848.png"
+  },
+  {
+    "id": "TM_8472",
+    "fotmobId": 8472,
+    "name": "Sunderland",
+    "shortName": "Sunderland",
+    "leagueId": "ENG1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8472.png"
+  },
+  {
+    "id": "TM_8487",
+    "fotmobId": 8487,
+    "name": "Sønderjyske",
+    "shortName": "Sønderjyske",
+    "leagueId": "DEN1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8487.png"
+  },
+  {
+    "id": "TM_6414",
+    "fotmobId": 6414,
+    "name": "Telstar",
+    "shortName": "Telstar",
+    "leagueId": "NED1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/6414.png"
+  },
+  {
+    "id": "TM_9804",
+    "fotmobId": 9804,
+    "name": "Torino",
+    "shortName": "Torino",
+    "leagueId": "ITA1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9804.png"
+  },
+  {
+    "id": "TM_8586",
+    "fotmobId": 8586,
+    "name": "Tottenham Hotspur",
+    "shortName": "Tottenham",
+    "leagueId": "ENG1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8586.png"
+  },
+  {
+    "id": "TM_9941",
+    "fotmobId": 9941,
+    "name": "Toulouse",
+    "shortName": "Toulouse",
+    "leagueId": "FRA1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9941.png"
+  },
+  {
+    "id": "TM_8608",
+    "fotmobId": 8608,
+    "name": "Tromsø",
+    "shortName": "Tromsø",
+    "leagueId": "NOR1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8608.png"
+  },
+  {
+    "id": "TM_10242",
+    "fotmobId": 10242,
+    "name": "Troyes",
+    "shortName": "Troyes",
+    "leagueId": "FRA1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10242.png"
+  },
+  {
+    "id": "TM_8600",
+    "fotmobId": 8600,
+    "name": "Udinese",
+    "shortName": "Udinese",
+    "leagueId": "ITA1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8600.png"
+  },
+  {
+    "id": "TM_8149",
+    "fotmobId": 8149,
+    "name": "Union Berlin",
+    "shortName": "Union Berlin",
+    "leagueId": "GER1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8149.png"
+  },
+  {
+    "id": "TM_10267",
+    "fotmobId": 10267,
+    "name": "Valencia",
+    "shortName": "Valencia",
+    "leagueId": "ESP1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10267.png"
+  },
+  {
+    "id": "TM_7881",
+    "fotmobId": 7881,
+    "name": "Venezia",
+    "shortName": "Venezia",
+    "leagueId": "ITA1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/7881.png"
+  },
+  {
+    "id": "TM_10269",
+    "fotmobId": 10269,
+    "name": "VfB Stuttgart",
+    "shortName": "VfB Stuttgart",
+    "leagueId": "GER1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10269.png"
+  },
+  {
+    "id": "TM_9939",
+    "fotmobId": 9939,
+    "name": "Viborg",
+    "shortName": "Viborg",
+    "leagueId": "DEN1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/9939.png"
+  },
+  {
+    "id": "TM_8478",
+    "fotmobId": 8478,
+    "name": "Viking",
+    "shortName": "Viking",
+    "leagueId": "NOR1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8478.png"
+  },
+  {
+    "id": "TM_10205",
+    "fotmobId": 10205,
+    "name": "Villarreal",
+    "shortName": "Villarreal",
+    "leagueId": "ESP1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/10205.png"
+  },
+  {
+    "id": "TM_7844",
+    "fotmobId": 7844,
+    "name": "Vitória de Guimarães",
+    "shortName": "Vitória de Guimarães",
+    "leagueId": "POR1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/7844.png"
+  },
+  {
+    "id": "TM_8007",
+    "fotmobId": 8007,
+    "name": "Vålerenga",
+    "shortName": "Vålerenga",
+    "leagueId": "NOR1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8007.png"
+  },
+  {
+    "id": "TM_8697",
+    "fotmobId": 8697,
+    "name": "Werder Bremen",
+    "shortName": "Werder Bremen",
+    "leagueId": "GER1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8697.png"
+  },
+  {
+    "id": "TM_8525",
+    "fotmobId": 8525,
+    "name": "Willem II",
+    "shortName": "Willem II",
+    "leagueId": "NED1",
+    "isMUFC": false,
+    "logoUrl": "https://images.fotmob.com/image_resources/logo/teamlogo/8525.png"
+  }
+]
