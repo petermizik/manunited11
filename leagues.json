@@ -1,7 +1,7 @@
 [
   {
     "id": "ENG1",
-    "fotmobId": 47,
+    "tmCode": "GB1",
     "name": "Premier League",
     "country": "England",
     "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
@@ -9,7 +9,7 @@
   },
   {
     "id": "ESP1",
-    "fotmobId": 87,
+    "tmCode": "ES1",
     "name": "La Liga",
     "country": "Spain",
     "flag": "🇪🇸",
@@ -17,7 +17,7 @@
   },
   {
     "id": "ITA1",
-    "fotmobId": 55,
+    "tmCode": "IT1",
     "name": "Serie A",
     "country": "Italy",
     "flag": "🇮🇹",
@@ -25,7 +25,7 @@
   },
   {
     "id": "GER1",
-    "fotmobId": 54,
+    "tmCode": "L1",
     "name": "Bundesliga",
     "country": "Germany",
     "flag": "🇩🇪",
@@ -33,7 +33,7 @@
   },
   {
     "id": "FRA1",
-    "fotmobId": 53,
+    "tmCode": "FR1",
     "name": "Ligue 1",
     "country": "France",
     "flag": "🇫🇷",
@@ -41,7 +41,7 @@
   },
   {
     "id": "NED1",
-    "fotmobId": 57,
+    "tmCode": "NL1",
     "name": "Eredivisie",
     "country": "Netherlands",
     "flag": "🇳🇱",
@@ -49,7 +49,7 @@
   },
   {
     "id": "POR1",
-    "fotmobId": 61,
+    "tmCode": "PO1",
     "name": "Primeira Liga",
     "country": "Portugal",
     "flag": "🇵🇹",
@@ -57,7 +57,7 @@
   },
   {
     "id": "NOR1",
-    "fotmobId": 59,
+    "tmCode": "NO1",
     "name": "Eliteserien",
     "country": "Norway",
     "flag": "🇳🇴",
@@ -65,7 +65,7 @@
   },
   {
     "id": "DEN1",
-    "fotmobId": 46,
+    "tmCode": "DK1",
     "name": "Superliga",
     "country": "Denmark",
     "flag": "🇩🇰",

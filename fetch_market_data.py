@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
-"""Fetches live 2026/27 squads, positions, market values, and verified photo IDs
-across all 9 permitted European leagues from FotMob's open JSON endpoints.
+"""Fetches official Transfermarkt market values, squads, positions, and portraits
+across all 9 permitted European leagues via Transfermarkt's JSON API
+(https://tmapi-alpha.transfermarkt.technology).
 """
 
 from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -13,185 +14,218 @@ REPO_DIR = "/usr/local/google/home/mizik/.gemini/jetski/scratch/manchester-unite
 DATA_DIR = os.path.join(REPO_DIR, "data")
 os.makedirs(DATA_DIR, exist_ok=True)
 
+TM_API_BASE = "https://tmapi-alpha.transfermarkt.technology"
+
 LEAGUE_CONFIG = [
-    {"id": "ENG1", "fotmobId": 47, "name": "Premier League", "country": "England", "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿", "tierGroup": "Top 5 European Leagues"},
-    {"id": "ESP1", "fotmobId": 87, "name": "La Liga", "country": "Spain", "flag": "🇪🇸", "tierGroup": "Top 5 European Leagues"},
-    {"id": "ITA1", "fotmobId": 55, "name": "Serie A", "country": "Italy", "flag": "🇮🇹", "tierGroup": "Top 5 European Leagues"},
-    {"id": "GER1", "fotmobId": 54, "name": "Bundesliga", "country": "Germany", "flag": "🇩🇪", "tierGroup": "Top 5 European Leagues"},
-    {"id": "FRA1", "fotmobId": 53, "name": "Ligue 1", "country": "France", "flag": "🇫🇷", "tierGroup": "Top 5 European Leagues"},
-    {"id": "NED1", "fotmobId": 57, "name": "Eredivisie", "country": "Netherlands", "flag": "🇳🇱", "tierGroup": "Additional Scouting Leagues"},
-    {"id": "POR1", "fotmobId": 61, "name": "Primeira Liga", "country": "Portugal", "flag": "🇵🇹", "tierGroup": "Additional Scouting Leagues"},
-    {"id": "NOR1", "fotmobId": 59, "name": "Eliteserien", "country": "Norway", "flag": "🇳🇴", "tierGroup": "Additional Scouting Leagues"},
-    {"id": "DEN1", "fotmobId": 46, "name": "Superliga", "country": "Denmark", "flag": "🇩🇰", "tierGroup": "Additional Scouting Leagues"},
+    {"id": "ENG1", "tmCode": "GB1", "name": "Premier League", "country": "England", "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿", "tierGroup": "Top 5 European Leagues"},
+    {"id": "ESP1", "tmCode": "ES1", "name": "La Liga", "country": "Spain", "flag": "🇪🇸", "tierGroup": "Top 5 European Leagues"},
+    {"id": "ITA1", "tmCode": "IT1", "name": "Serie A", "country": "Italy", "flag": "🇮🇹", "tierGroup": "Top 5 European Leagues"},
+    {"id": "GER1", "tmCode": "L1",  "name": "Bundesliga", "country": "Germany", "flag": "🇩🇪", "tierGroup": "Top 5 European Leagues"},
+    {"id": "FRA1", "tmCode": "FR1", "name": "Ligue 1", "country": "France", "flag": "🇫🇷", "tierGroup": "Top 5 European Leagues"},
+    {"id": "NED1", "tmCode": "NL1", "name": "Eredivisie", "country": "Netherlands", "flag": "🇳🇱", "tierGroup": "Additional Scouting Leagues"},
+    {"id": "POR1", "tmCode": "PO1", "name": "Primeira Liga", "country": "Portugal", "flag": "🇵🇹", "tierGroup": "Additional Scouting Leagues"},
+    {"id": "NOR1", "tmCode": "NO1", "name": "Eliteserien", "country": "Norway", "flag": "🇳🇴", "tierGroup": "Additional Scouting Leagues"},
+    {"id": "DEN1", "tmCode": "DK1", "name": "Superliga", "country": "Denmark", "flag": "🇩🇰", "tierGroup": "Additional Scouting Leagues"},
 ]
 
 HEADERS = {
-    "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36"
+    "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
+    "Accept": "application/json",
+}
+
+TM_POS_MAP = {
+    "GK": ["GK"],
+    "CB": ["CB", "LCB", "RCB"],
+    "SW": ["CB", "LCB", "RCB"],
+    "LB": ["LB", "LWB"],
+    "RB": ["RB", "RWB"],
+    "DM": ["CDM", "CM"],
+    "CM": ["CM", "CDM"],
+    "LM": ["LM", "LWB", "LW"],
+    "RM": ["RM", "RWB", "RW"],
+    "AM": ["CAM", "CM"],
+    "LW": ["LW", "LM"],
+    "RW": ["RW", "RM"],
+    "SS": ["CAM", "ST", "LW", "RW"],
+    "CF": ["ST"],
 }
 
 
 def fetch_json(url):
     req = urllib.request.Request(url, headers=HEADERS)
-    with urllib.request.urlopen(req, timeout=12) as resp:
+    with urllib.request.urlopen(req, timeout=15) as resp:
         return json.loads(resp.read().decode("utf-8"))
 
 
-def normalize_positions(pos_desc_str, role_group):
-    """Maps FotMob positionIdsDesc (e.g. 'LW,ST,CAM') and role group to canonical tactical codes."""
-    valid_codes = {"GK", "LB", "LWB", "CB", "RB", "RWB", "CDM", "CM", "LM", "RM", "CAM", "LW", "RW", "ST"}
-    positions = []
-    if pos_desc_str:
-        for raw in pos_desc_str.split(","):
-            code = raw.strip().upper()
-            if code == "CF":
-                code = "ST"
-            elif code == "DM":
-                code = "CDM"
-            elif code == "AM":
-                code = "CAM"
-            if code in valid_codes and code not in positions:
-                positions.append(code)
+def map_tm_positions(attrs):
+    raw_short_codes = []
+    for key in ("position", "firstSidePosition", "secondSidePosition"):
+        pos_obj = attrs.get(key)
+        if isinstance(pos_obj, dict) and pos_obj.get("shortName"):
+            raw_short_codes.append(pos_obj["shortName"].strip().upper())
 
-    if not positions:
-        if role_group == "keepers":
-            positions = ["GK"]
-        elif role_group == "defenders":
-            positions = ["CB"]
-        elif role_group == "midfielders":
-            positions = ["CM"]
+    mapped = []
+    for code in raw_short_codes:
+        for target in TM_POS_MAP.get(code, []):
+            if target not in mapped:
+                mapped.append(target)
+
+    if not mapped:
+        grp = (attrs.get("positionGroup") or "").upper()
+        if grp == "GOALKEEPER":
+            mapped = ["GK"]
+        elif grp == "DEFENDER":
+            mapped = ["CB", "LCB", "RCB"]
+        elif grp == "MIDFIELDER":
+            mapped = ["CM", "CDM"]
         else:
-            positions = ["ST"]
+            mapped = ["ST"]
 
-    # Ensure sensible tactical versatility within the same role family
-    primary = positions[0]
-    if primary == "CB":
-        for extra in ["LCB", "RCB"]:
-            if extra not in positions:
-                positions.append(extra)
-    elif "CB" in positions:
-        for extra in ["LCB", "RCB"]:
-            if extra not in positions:
-                positions.append(extra)
-
-    # For Manchester United's Kobbie Mainoo or pure CDM/CM players, ensure CM <-> CDM compatibility
-    if "CDM" in positions and "CM" not in positions and role_group == "midfielders":
-        positions.append("CM")
-
-    return primary, positions
+    return mapped[0], mapped
 
 
-def extract_surname(full_name):
-    parts = full_name.strip().split()
-    if len(parts) <= 1:
-        return full_name.strip()
-    # Keep common two-part surnames or standard last name
-    particles = {"de", "van", "von", "da", "di", "del", "dos", "el", "al", "st.", "le"}
-    if len(parts) >= 3 and parts[-2].lower() in particles:
-        return f"{parts[-2]} {parts[-1]}"
-    return parts[-1]
+def extract_surname(player_obj):
+    last_name = (player_obj.get("lastName") or "").strip()
+    artist_name = (player_obj.get("artistName") or "").strip()
+    full_name = (player_obj.get("name") or "").strip()
+    if artist_name:
+        return artist_name
+    if last_name:
+        return last_name
+    parts = full_name.split()
+    return parts[-1] if parts else full_name
 
 
-def fetch_team_squad(task):
-    lg_id, team_id, team_name, short_name = task
-    url = f"https://www.fotmob.com/api/data/teams?id={team_id}"
-    try:
-        data = fetch_json(url)
-    except Exception as exc:
-        print(f"Warning: failed to fetch team {team_name} ({team_id}): {exc}", file=sys.stderr)
-        return None, []
+def fetch_club_squad_and_players(task):
+    lg_id, club_id, club_meta = task
+    is_mufc = (str(club_id) == "985")
+    base_details = club_meta.get("baseDetails") or {}
+    club_name = club_meta.get("name") or f"Club {club_id}"
+    short_name = base_details.get("shortName") or club_name
+    crest_url = club_meta.get("crestUrl") or f"https://img.a.transfermarkt.technology/wappen/big/{club_id}.png"
 
-    is_mufc = (int(team_id) == 10260)
     team_obj = {
-        "id": f"TM_{team_id}",
-        "fotmobId": int(team_id),
-        "name": team_name,
-        "shortName": short_name or team_name,
+        "id": f"TM_{club_id}",
+        "tmClubId": str(club_id),
+        "name": club_name,
+        "shortName": short_name,
         "leagueId": lg_id,
         "isMUFC": is_mufc,
-        "logoUrl": f"https://images.fotmob.com/image_resources/logo/teamlogo/{team_id}.png"
+        "logoUrl": crest_url,
     }
 
-    squad_groups = data.get("squad", {}).get("squad", [])
+    try:
+        sq_resp = fetch_json(f"{TM_API_BASE}/club/{club_id}/squad")
+        squad_items = sq_resp.get("data", {}).get("squad", [])
+    except Exception as exc:
+        print(f"Warning: failed squad fetch for {club_name} ({club_id}): {exc}", file=sys.stderr)
+        return team_obj, []
+
+    shirt_map = {}
+    player_ids = []
+    for item in squad_items:
+        pid = str(item.get("playerId") or "")
+        if pid:
+            player_ids.append(pid)
+            shirt_map[pid] = item.get("shirtNumber") or ""
+
+    if not player_ids:
+        return team_obj, []
+
+    # Fetch player details in batches of 20
     players_out = []
-    for grp in squad_groups:
-        grp_title = (grp.get("title") or "").lower()
-        if grp_title == "coach":
+    for i in range(0, len(player_ids), 20):
+        batch = player_ids[i:i + 20]
+        query = "&".join([f"ids[]={pid}" for pid in batch])
+        try:
+            pl_resp = fetch_json(f"{TM_API_BASE}/players?{query}")
+            pl_list = pl_resp.get("data") or []
+        except Exception as exc:
+            print(f"Warning: failed player batch for {club_name}: {exc}", file=sys.stderr)
             continue
-        for m in grp.get("members", []):
-            pid = m.get("id")
-            name = m.get("name")
+
+        for p in pl_list:
+            pid = str(p.get("id") or "")
+            name = p.get("name")
             if not pid or not name:
                 continue
-            primary_pos, all_positions = normalize_positions(m.get("positionIdsDesc"), grp_title)
-            raw_val = m.get("transferValue") or 0
-            val_eur_m = round(raw_val / 1_000_000.0, 1) if raw_val else 1.0
-            if val_eur_m < 0.5:
-                val_eur_m = 0.5
-            val_gbp_m = round(val_eur_m * 0.85, 1)
+            attrs = p.get("attributes") or {}
+            primary_pos, all_positions = map_tm_positions(attrs)
+
+            mv_curr = (p.get("marketValueDetails") or {}).get("current") or {}
+            raw_eur = mv_curr.get("value") or 0
+            val_eur_m = round(raw_eur / 1_000_000.0, 2)
+            val_gbp_m = round(val_eur_m * 0.85, 2)
+            determined_date = mv_curr.get("determined") or ""
+
+            age = (p.get("lifeDates") or {}).get("age") or 22
+            portrait_url = p.get("portraitUrl") or ""
 
             players_out.append({
                 "id": f"PL_{pid}",
-                "fotmobId": int(pid),
+                "tmPlayerId": pid,
                 "name": name,
-                "surname": extract_surname(name),
-                "clubId": f"TM_{team_id}",
-                "clubName": short_name or team_name,
+                "surname": extract_surname(p),
+                "clubId": f"TM_{club_id}",
+                "clubName": short_name,
                 "leagueId": lg_id,
                 "isMUFC": is_mufc,
                 "primaryPos": primary_pos,
                 "positions": all_positions,
                 "valueEurM": val_eur_m,
                 "valueGbpM": val_gbp_m,
-                "age": m.get("age") or 22,
-                "nationality": m.get("cname") or m.get("ccode") or "",
-                "shirtNumber": m.get("shirtNumber") or "",
-                "headshotUrl": f"https://images.fotmob.com/image_resources/playerimages/{pid}.png"
+                "valueUpdated": determined_date,
+                "age": age,
+                "shirtNumber": shirt_map.get(pid, ""),
+                "headshotUrl": portrait_url,
             })
 
     return team_obj, players_out
 
 
 def main():
-    print("Fetching live league tables for all 9 European leagues from FotMob...")
-    team_tasks = []
+    print("Fetching Transfermarkt competition tables across all 9 leagues...")
+    league_club_pairs = []
+    all_club_ids = []
     for lg in LEAGUE_CONFIG:
-        url = f"https://www.fotmob.com/api/data/leagues?id={lg['fotmobId']}"
-        d = fetch_json(url)
-        table_blocks = d.get("table", [])
-        rows = []
-        for blk in table_blocks:
-            tdata = blk.get("data", {})
-            if "table" in tdata and "all" in tdata["table"]:
-                rows = tdata["table"]["all"]
-                break
-            if "tables" in tdata and tdata["tables"]:
-                rows = tdata["tables"][0].get("table", {}).get("all", [])
-                break
-        print(f"  {lg['id']} ({lg['name']}): {len(rows)} clubs")
-        for r in rows:
-            tid = r.get("id")
-            tname = r.get("name")
-            sname = r.get("shortName") or tname
-            if tid and tname:
-                team_tasks.append((lg["id"], tid, tname, sname))
+        code = lg["tmCode"]
+        d = fetch_json(f"{TM_API_BASE}/competition/{code}/table")
+        tables = d.get("data", {}).get("tables") or []
+        clubs = tables[0].get("clubs", []) if tables else []
+        print(f"  {lg['id']} ({lg['name']} / {code}): {len(clubs)} clubs")
+        for c in clubs:
+            cid = str(c.get("clubId") or "")
+            if cid:
+                league_club_pairs.append((lg["id"], cid))
+                all_club_ids.append(cid)
 
-    print(f"Fetching squads for {len(team_tasks)} clubs concurrently...")
+    # Batch-fetch club details (/clubs?ids[]=...)
+    club_meta_map = {}
+    for i in range(0, len(all_club_ids), 25):
+        batch = all_club_ids[i:i + 25]
+        q = "&".join([f"ids[]={cid}" for cid in batch])
+        resp = fetch_json(f"{TM_API_BASE}/clubs?{q}")
+        for c_obj in (resp.get("data") or []):
+            club_meta_map[str(c_obj.get("id"))] = c_obj
+
+    tasks = [(lg_id, cid, club_meta_map.get(cid, {"id": cid})) for lg_id, cid in league_club_pairs]
+    print(f"Fetching official Transfermarkt squads & market values for {len(tasks)} clubs...")
+
     teams = []
     players = []
-    seen_player_ids = set()
+    seen_pids = set()
 
-    with ThreadPoolExecutor(max_workers=16) as pool:
-        futures = [pool.submit(fetch_team_squad, t) for t in team_tasks]
+    with ThreadPoolExecutor(max_workers=14) as pool:
+        futures = [pool.submit(fetch_club_squad_and_players, t) for t in tasks]
         for fut in as_completed(futures):
             t_obj, p_list = fut.result()
             if t_obj:
                 teams.append(t_obj)
             for p in p_list:
-                if p["id"] not in seen_player_ids:
-                    seen_player_ids.add(p["id"])
+                if p["id"] not in seen_pids:
+                    seen_pids.add(p["id"])
                     players.append(p)
 
-    # Sort teams alphabetically (with MUFC first) and players by value descending
     teams.sort(key=lambda x: (not x["isMUFC"], x["name"]))
     players.sort(key=lambda x: (-x["valueEurM"], x["name"]))
 
@@ -202,8 +236,8 @@ def main():
     with open(os.path.join(DATA_DIR, "players.json"), "w", encoding="utf-8") as f:
         json.dump(players, f, indent=2, ensure_ascii=False)
 
-    mufc_players = [p for p in players if p["isMUFC"]]
-    print(f"Done! Saved {len(LEAGUE_CONFIG)} leagues, {len(teams)} clubs, {len(players)} total players ({len(mufc_players)} MUFC squad members).")
+    mufc_count = sum(1 for p in players if p["isMUFC"])
+    print(f"Success! Saved {len(LEAGUE_CONFIG)} leagues, {len(teams)} clubs, {len(players)} Transfermarkt players ({mufc_count} MUFC).")
 
 
 if __name__ == "__main__":
